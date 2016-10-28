@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"{{.package}}/gin/config"
+	"{{.package}}/config"
 	"{{.package}}/routers"
 )
 
