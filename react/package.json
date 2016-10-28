@@ -15,8 +15,8 @@
     "react-router": "^3.0.0"
   },
   "scripts": {
-    "watch": "./node_modules/webpack/bin/webpack.js --watch",
     "build": "./node_modules/webpack/bin/webpack.js",
-    "publish":"NODE_ENV=production ./node_modules/webpack/bin/webpack.js --optimize-minimize"
+    "watch": "npm run build -- --watch",
+    "publish": "NODE_ENV=production npm run build -- --optimize-minimize"
   }
 }
