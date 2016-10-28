@@ -2,7 +2,7 @@ package routers
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/soyking/quick-start/gin/errors"
+	"{{.package}}/errors"
 )
 
 func InitRouter(g *gin.Engine) {

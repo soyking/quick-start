@@ -2,8 +2,8 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/soyking/quick-start/gin/config"
-	"github.com/soyking/quick-start/gin/routers"
+	"{{.package}}/gin/config"
+	"{{.package}}/routers"
 )
 
 func main() {

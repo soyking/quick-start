@@ -1,6 +1,6 @@
 package routers
 
-import . "github.com/soyking/quick-start/gin/errors"
+import . "{{.package}}/errors"
 
 const (
 	RESP_SUCCESS_CODE  = 0
