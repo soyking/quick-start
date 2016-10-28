@@ -12,5 +12,5 @@ func (e *InternalError) Error() string {
 }
 
 var (
-	ErrorParamsMissing = &InternalError{Code: -11, Msg: "参数缺失"}
+	ErrorAny = &InternalError{Code: 400, Msg: "bad request"}
 )
