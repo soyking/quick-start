@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Content = React.createClass({
+class Content extends React.Component{
 	render() {
 		return (
 			<div>Content</div>
 		)
 	}
-})
+}
 
 module.exports = Content

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const App = React.createClass({
+class App extends React.Component {
     render() {
         return (
             <div>
@@ -8,7 +8,7 @@ const App = React.createClass({
                 {this.props.children}
             </div>
         );
-    },
-})
+    }
+}
 
 module.exports = App
