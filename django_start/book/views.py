@@ -1,9 +1,10 @@
-from rest.models import Book
-from rest.serializers import CreateBookSerializer, BookSerializer, ModifyBookSerializer, DeleteBookSerializer
+from book.models import Book
+from book.serializers import (CreateBookSerializer, BookSerializer,
+                              ModifyBookSerializer, DeleteBookSerializer)
 from utils.api import validate, APIView, APIError
 
 
-class RestAPI(APIView):
+class BookAPI(APIView):
     @validate(CreateBookSerializer)
     def post(self, request):
         data = request.json_data

@@ -1,3 +1,4 @@
+from rest_framework.parsers import JSONParser
 from rest_framework.response import Response
 from rest_framework.views import APIView as RestAPIView
 
@@ -9,8 +10,10 @@ class APIError(Exception):
 
 
 class APIView(RestAPIView):
+    parser_classes = (JSONParser,)
+
     def response(self, serializer, code=200):
-        return self.response_raw({"code": code, "data": serializer.data})
+        return self.response_raw(data=serializer.data, code=code)
 
     def response_raw(self, data=None, err=None, code=200):
         return Response({"code": code, "err": err, "data": data})
